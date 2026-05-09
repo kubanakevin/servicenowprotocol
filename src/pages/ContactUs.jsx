@@ -35,7 +35,7 @@ function Contact() {
     setModalMessage(message);
     setModalType(type);
     setShowModal(true);
-    
+
     setTimeout(() => {
       setShowModal(false);
     }, 5000);
@@ -47,7 +47,7 @@ function Contact() {
 
     try {
       const formSubmitUrl = "https://formsubmit.co/ajax/servicenowprot@gmail.com";
-      
+
       const emailText = `
         NEW SERVICENOW INQUIRY
         --------------------
@@ -73,14 +73,14 @@ function Contact() {
           _replyto: formData.email,
         })
       });
-      
+
       if (response.ok) {
         showMessageModal(
           "Inquiry Sent Successfully! ✨",
           `Thank you ${formData.name}! We have received your inquiry. Our team will contact you within 24 hours at ${formData.email}.`,
           "success"
         );
-        
+
         setFormData({
           name: "",
           email: "",
@@ -96,7 +96,7 @@ function Contact() {
           `Thank you ${formData.name}! We have received your inquiry and will contact you shortly.`,
           "success"
         );
-        
+
         setFormData({
           name: "",
           email: "",
@@ -114,7 +114,7 @@ function Contact() {
         `Thank you ${formData.name}! We have received your message and will contact you shortly.`,
         "success"
       );
-      
+
       setFormData({
         name: "",
         email: "",
@@ -136,10 +136,10 @@ function Contact() {
   return (
     <>
       <Header />
-      
+
       <main>
         {/* Page Header */}
-        <section className="position-relative" style={{ 
+        <section className="position-relative" style={{
           minHeight: '40vh',
           background: 'linear-gradient(135deg, #0a1c3a 0%, #122b4f 50%, #1a365a 100%)',
           marginTop: '0',
@@ -155,7 +155,7 @@ function Contact() {
             backgroundPosition: 'center',
             opacity: 0.15,
           }} />
-          
+
           <div className="container position-relative text-center" style={{ zIndex: 2, paddingTop: '120px', paddingBottom: '60px' }}>
             <div className="d-flex justify-content-center mb-3">
               <span className="badge px-3 py-2 rounded-pill" style={{
@@ -254,8 +254,8 @@ function Contact() {
                       onChange={handleChange}
                       required
                       placeholder="Enter your full name"
-                      style={{ 
-                        borderRadius: '12px', 
+                      style={{
+                        borderRadius: '12px',
                         border: '1px solid #e0e0e0',
                         padding: '12px 16px',
                         transition: 'all 0.3s ease'
@@ -280,8 +280,8 @@ function Contact() {
                         onChange={handleChange}
                         required
                         placeholder="your@email.com"
-                        style={{ 
-                          borderRadius: '12px', 
+                        style={{
+                          borderRadius: '12px',
                           border: '1px solid #e0e0e0',
                           padding: '12px 16px',
                           transition: 'all 0.3s ease'
@@ -303,8 +303,8 @@ function Contact() {
                         onChange={handleChange}
                         required
                         placeholder="+250 788 804 113"
-                        style={{ 
-                          borderRadius: '12px', 
+                        style={{
+                          borderRadius: '12px',
                           border: '1px solid #e0e0e0',
                           padding: '12px 16px',
                           transition: 'all 0.3s ease'
@@ -327,8 +327,8 @@ function Contact() {
                         name="serviceType"
                         value={formData.serviceType}
                         onChange={handleChange}
-                        style={{ 
-                          borderRadius: '12px', 
+                        style={{
+                          borderRadius: '12px',
                           border: '1px solid #e0e0e0',
                           padding: '12px 16px',
                           cursor: 'pointer'
@@ -356,8 +356,8 @@ function Contact() {
                         name="eventDate"
                         value={formData.eventDate}
                         onChange={handleChange}
-                        style={{ 
-                          borderRadius: '12px', 
+                        style={{
+                          borderRadius: '12px',
                           border: '1px solid #e0e0e0',
                           padding: '12px 16px',
                           color: '#6c757d'
@@ -379,8 +379,8 @@ function Contact() {
                       name="guestCount"
                       value={formData.guestCount}
                       onChange={handleChange}
-                      style={{ 
-                        borderRadius: '12px', 
+                      style={{
+                        borderRadius: '12px',
                         border: '1px solid #e0e0e0',
                         padding: '12px 16px',
                         cursor: 'pointer'
@@ -411,8 +411,8 @@ function Contact() {
                       onChange={handleChange}
                       required
                       placeholder="Tell us about your event, special requirements, or any questions..."
-                      style={{ 
-                        borderRadius: '12px', 
+                      style={{
+                        borderRadius: '12px',
                         border: '1px solid #e0e0e0',
                         padding: '12px 16px',
                         resize: 'vertical',
@@ -424,14 +424,14 @@ function Contact() {
                   </div>
 
                   {/* Submit Button */}
-                  <button 
-                    type="submit" 
+                  <button
+                    type="submit"
                     className="btn btn-lg w-100 fw-semibold"
-                    style={{ 
-                      borderRadius: '50px', 
-                      padding: '14px', 
+                    style={{
+                      borderRadius: '50px',
+                      padding: '14px',
                       background: 'linear-gradient(135deg, #d4af37 0%, #b8942e 100%)',
-                      border: 'none', 
+                      border: 'none',
                       color: '#0a1c3a',
                       transition: 'all 0.3s ease',
                       boxShadow: '0 4px 15px rgba(212, 175, 55, 0.3)'
@@ -474,8 +474,8 @@ function Contact() {
                   </div>
                   <div className="p-4">
                     {/* Map Placeholder */}
-                    <div className="mb-4" style={{ 
-                      borderRadius: '16px', 
+                    <div className="mb-4" style={{
+                      borderRadius: '16px',
                       overflow: 'hidden',
                       background: 'linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%)',
                       height: '250px',
@@ -487,9 +487,9 @@ function Contact() {
                       <i className="bi bi-geo-alt-fill" style={{ fontSize: '48px', color: '#d4af37' }}></i>
                       <p className="mt-3 mb-0 fw-semibold" style={{ color: '#0a1c3a' }}>Kigali Heights, KG 7 Ave</p>
                       <p className="text-muted small">Kigali, Rwanda</p>
-                      <a 
-                        href="https://maps.google.com/?q=Kigali+Heights+KG+7+Ave+Kigali+Rwanda" 
-                        target="_blank" 
+                      <a
+                        href="https://maps.google.com/?q=Kigali+Heights+KG+7+Ave+Kigali+Rwanda"
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="btn btn-sm mt-2 px-4"
                         style={{ background: '#d4af37', color: '#0a1c3a', borderRadius: '50px', fontWeight: '500' }}
@@ -525,15 +525,15 @@ function Contact() {
                     {/* Working Hours */}
                     <div className="mb-4">
                       <h5 className="fw-bold mb-3" style={{ color: '#0a1c3a' }}>
-                        <i className="bi bi-clock-fill me-2" style={{ color: '#d4af37' }}></i>Working Hours
+                        <i className="bi bi-clock-fill me-2" style={{ color: '#d4af37' }}></i>
+                        Availability
                       </h5>
+
                       <div className="d-flex justify-content-between align-items-center py-2 border-bottom" style={{ borderColor: '#e0e0e0' }}>
-                        <span className="text-muted">Monday - Friday</span>
-                        <span className="fw-semibold" style={{ color: '#0a1c3a' }}>9:00 AM - 6:00 PM</span>
-                      </div>
-                      <div className="d-flex justify-content-between align-items-center py-2">
-                        <span className="text-muted">Saturday</span>
-                        <span className="fw-semibold" style={{ color: '#0a1c3a' }}>10:00 AM - 2:00 PM</span>
+                        <span className="text-muted">All Days</span>
+                        <span className="fw-semibold" style={{ color: '#0a1c3a' }}>
+                          24/7 (Always Available)
+                        </span>
                       </div>
                     </div>
 
@@ -658,7 +658,7 @@ function Contact() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-5" style={{ 
+        <section className="py-5" style={{
           background: 'linear-gradient(135deg, #0a1c3a 0%, #122b4f 100%)'
         }}>
           <div className="container py-4 text-center">
@@ -669,39 +669,39 @@ function Contact() {
               Let us welcome your guests with professionalism, elegance, and excellence.
             </p>
             <div className="d-flex flex-wrap gap-3 justify-content-center">
-              <a href="tel:+250788804113" className="btn btn-lg px-5 py-3 fw-semibold" style={{ 
+              <a href="tel:+250788804113" className="btn btn-lg px-5 py-3 fw-semibold" style={{
                 borderRadius: '50px',
                 background: '#d4af37',
                 color: '#0a1c3a',
                 transition: 'all 0.3s ease'
               }}
-              onMouseEnter={(e) => {
-                e.target.style.transform = 'translateY(-2px)';
-                e.target.style.boxShadow = '0 8px 25px rgba(212, 175, 55, 0.4)';
-              }}
-              onMouseLeave={(e) => {
-                e.target.style.transform = 'translateY(0)';
-                e.target.style.boxShadow = 'none';
-              }}>
+                onMouseEnter={(e) => {
+                  e.target.style.transform = 'translateY(-2px)';
+                  e.target.style.boxShadow = '0 8px 25px rgba(212, 175, 55, 0.4)';
+                }}
+                onMouseLeave={(e) => {
+                  e.target.style.transform = 'translateY(0)';
+                  e.target.style.boxShadow = 'none';
+                }}>
                 <i className="bi bi-telephone-fill me-2"></i>
                 Call Us Now
               </a>
-              <a href="https://wa.me/250788804113" className="btn btn-outline-light btn-lg px-5 py-3 fw-semibold" style={{ 
+              <a href="https://wa.me/250788804113" className="btn btn-outline-light btn-lg px-5 py-3 fw-semibold" style={{
                 borderRadius: '50px',
                 transition: 'all 0.3s ease'
               }}
-              onMouseEnter={(e) => {
-                e.target.style.transform = 'translateY(-2px)';
-                e.target.style.background = '#d4af37';
-                e.target.style.color = '#0a1c3a';
-                e.target.style.borderColor = '#d4af37';
-              }}
-              onMouseLeave={(e) => {
-                e.target.style.transform = 'translateY(0)';
-                e.target.style.background = 'transparent';
-                e.target.style.color = '#fff';
-                e.target.style.borderColor = 'rgba(255,255,255,0.5)';
-              }}>
+                onMouseEnter={(e) => {
+                  e.target.style.transform = 'translateY(-2px)';
+                  e.target.style.background = '#d4af37';
+                  e.target.style.color = '#0a1c3a';
+                  e.target.style.borderColor = '#d4af37';
+                }}
+                onMouseLeave={(e) => {
+                  e.target.style.transform = 'translateY(0)';
+                  e.target.style.background = 'transparent';
+                  e.target.style.color = '#fff';
+                  e.target.style.borderColor = 'rgba(255,255,255,0.5)';
+                }}>
                 <i className="bi bi-whatsapp me-2"></i>
                 WhatsApp Us
               </a>
@@ -712,7 +712,7 @@ function Contact() {
 
       {/* Modal */}
       {showModal && (
-        <div 
+        <div
           style={{
             position: 'fixed',
             top: 0,
@@ -728,7 +728,7 @@ function Contact() {
           }}
           onClick={closeModal}
         >
-          <div 
+          <div
             style={{
               backgroundColor: 'white',
               borderRadius: '24px',
@@ -740,7 +740,7 @@ function Contact() {
             }}
             onClick={(e) => e.stopPropagation()}
           >
-            <div 
+            <div
               className="rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4"
               style={{
                 width: '80px',
@@ -753,7 +753,7 @@ function Contact() {
             </div>
             <h3 className="fw-bold mb-3" style={{ color: '#0a1c3a' }}>{modalTitle}</h3>
             <p className="text-muted mb-4" style={{ lineHeight: '1.6' }}>{modalMessage}</p>
-            <button 
+            <button
               onClick={closeModal}
               className="btn px-5 py-2 fw-semibold"
               style={{ borderRadius: '50px', background: '#d4af37', border: 'none', color: '#0a1c3a' }}

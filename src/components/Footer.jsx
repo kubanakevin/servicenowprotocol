@@ -242,11 +242,7 @@ function Footer() {
                                     <ChevronRight size={12} /> Our Services
                                 </Link>
                             </li>
-                            <li className="mb-3">
-                                <Link to="/team" className="footer-link text-white-50 text-decoration-none d-inline-flex align-items-center gap-2">
-                                    <ChevronRight size={12} /> Our Team
-                                </Link>
-                            </li>
+                            
                             <li className="mb-3">
                                 <Link to="/gallery" className="footer-link text-white-50 text-decoration-none d-inline-flex align-items-center gap-2">
                                     <ChevronRight size={12} /> Event Gallery
