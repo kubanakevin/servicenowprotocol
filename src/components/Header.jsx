@@ -199,6 +199,16 @@ export default function Header() {
                   Contact
                 </NavLink>
               </li>
+              <li className="nav-item">
+                <NavLink 
+                  className={({ isActive }) => 
+                    `nav-link px-3 py-2 fw-semibold transition-all ${isActive ? 'active-nav' : ''}`
+                  } 
+                  to="/gallery"
+                >
+                  Gallery
+                </NavLink>
+              </li>
 
               {/* CTA BUTTON with shine effect */}
               <li className="nav-item ms-lg-2 mt-2 mt-lg-0">
