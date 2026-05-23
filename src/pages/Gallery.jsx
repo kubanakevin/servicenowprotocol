@@ -7,19 +7,20 @@ import { useState } from "react";
 import aboutImg from "../assets/about1.jpeg";
 
 // hero images
-import hero1Img from "../assets/hero.png";
-import hero2Img from "../assets/service21.png";
+import hero1Img from "../assets/hero1.jpeg";
+import hero2Img from "../assets/gallery11.jpeg";
 
 // extra main image
-import photoImg from "../assets/service21.png";
+import photoImg from "../assets/gallery22.jpeg";
 
 // services
-import service1Img from "../assets/service21.png";
-import service2Img from "../assets/service21.png";
-import service3Img from "../assets/icon.png";
+import service1Img from "../assets/gallery33.jpeg";
+import service2Img from "../assets/gallery44.jpeg";
+import service3Img from "../assets/all.jpeg";
+import g1 from "../assets/boys.jpeg";
 
 // security
-import securityImg from "../assets/service21.png";
+import securityImg from "../assets/gallery55.jpeg";
 
 // About section second image
 const about2Img = aboutImg;
@@ -28,7 +29,7 @@ const about2Img = aboutImg;
 const presidentImg = photoImg;
 
 // Gallery images
-const g1 = service3Img;
+// const g1 = service3Img;
 const g2 = hero2Img;
 const g3 = aboutImg;
 const g4 = service1Img;

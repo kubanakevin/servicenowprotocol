@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import { Shield, Award, Heart, Star, Users, Calendar, MapPin, Phone, Mail, ChevronRight, Sparkles, Clock, HandHeart } from "lucide-react";
 
 // Import all images from assets
-import aboutImg from "../assets/about1.jpeg";
-import hero1Img from "../assets/hero.png";
+import aboutImg from "../assets/boys.jpeg";
+import hero1Img from "../assets/hero1.jpeg";
 import hero2Img from "../assets/hero2.jpeg";
 import presidentImg from "../assets/presidente.png";
 

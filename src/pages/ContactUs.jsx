@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 
 // Import images
-import hero1Img from "../assets/hero.png";
+import hero1Img from "../assets/hero1.jpeg";
 
 function Contact() {
   const [formData, setFormData] = useState({
